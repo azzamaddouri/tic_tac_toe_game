@@ -6,6 +6,7 @@ import 'package:tic_tac_toe_game/screens/main_menu_screen.dart';
 import 'package:tic_tac_toe_game/utils/colors.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -15,8 +16,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.dark().copyWith(
+      darkTheme: ThemeData(
+        useMaterial3: false,
+      ),
+      theme: ThemeData.dark(
+        useMaterial3: false,
+      ).copyWith(
         scaffoldBackgroundColor: bgColor,
       ),
       routes: {

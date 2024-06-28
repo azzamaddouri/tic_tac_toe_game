@@ -11,12 +11,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/socket.io": "^3.0.2",
     "nodemon": "^3.1.4"
   },
   "dependencies": {
     "express": "^4.19.2",
     "http": "^0.0.1-security",
     "mongoose": "^8.4.4",
-    "socket.io": "^4.7.5"
+    "socket.io": "^4.0.0"
   }
 }
